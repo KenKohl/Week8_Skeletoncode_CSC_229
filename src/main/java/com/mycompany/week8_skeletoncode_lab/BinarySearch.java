@@ -6,7 +6,7 @@ package com.mycompany.week8_skeletoncode_lab;
 
 /**
  *
- * @author MoaathAlrajab
+ * @author MoaathAlrajab and Ken Kohlhof
  */
 public class BinarySearch {
 
