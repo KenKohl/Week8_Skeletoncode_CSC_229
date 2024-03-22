@@ -14,7 +14,9 @@ public class Problem01 {
     // Todo 04: Develop a method that returns the sum of the prime numbers between 1 and n
     //          Test your solution
     //          Analyze its space and time  
-    
+
+        //delete code below. Only there to remove error
+        return -1;
     }
     
 }
