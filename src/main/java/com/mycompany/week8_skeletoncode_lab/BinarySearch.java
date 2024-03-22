@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package com.mycompany.week8_skeletoncode_lab;
+import java.util.Scanner;
 
 /**
  *
@@ -26,6 +27,17 @@ public class BinarySearch {
             }
         }
         return index;
+    }
+    public static void main(String args[]){
+        int arr[] = {2, 4, 6, 8, 10, 12, 14, 16, 18, 20};
+        Scanner scnr = new Scanner(System.in);
+
+        System.out.println("Please enter a number to search.");
+        int key = scnr.nextInt();
+
+        int result = runBinarySearchIteratively(arr, key, 0, arr.length);
+
+        System.out.println(result);
     }
     //ToDo 2: Call the above method and test the algorithm  
     // provide time and space analysis 
