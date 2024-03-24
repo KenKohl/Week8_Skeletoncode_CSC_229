@@ -6,6 +6,13 @@ package com.mycompany.week8_skeletoncode_lab;
 import java.util.Scanner;
 
 /**
+ * Time and Space Analysis for runBinarySearchIteratively method
+ *
+ * In this method the time complexity is O(log n). This is because in each iteration the size we end up
+ * searching is reduced by half.
+ *
+ * The Space complexity in this method is O(1) since algorithm uses a constant amount of space to keep track of
+ * things like low, high, and mid.
  *
  * @author MoaathAlrajab and Ken Kohlhof
  */
@@ -29,14 +36,16 @@ public class BinarySearch {
         return index;
     }
     public static void main(String args[]){
-        int arr[] = {2, 4, 6, 8, 10, 12, 14, 16, 18, 20};
-        Scanner scnr = new Scanner(System.in);
+        int arr[] = {2, 4, 6, 8, 10, 12, 14, 16, 18, 20}; //Testing array
+        Scanner scnr = new Scanner(System.in); //Instantiate Scanner object
 
-        System.out.println("Please enter a number to search.");
-        int key = scnr.nextInt();
+        System.out.println("Please enter a number to search."); //Prompts user for input of number to search
+        int key = scnr.nextInt(); //Sets key variable as next integer input from user
 
+        //Sets result variable as return value from method call
         int result = runBinarySearchIteratively(arr, key, 0, arr.length);
 
+        //prints result
         System.out.println(result);
     }
     //ToDo 2: Call the above method and test the algorithm  
