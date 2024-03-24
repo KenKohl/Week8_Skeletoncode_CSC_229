@@ -43,10 +43,14 @@ public class BinarySearch {
         int key = scnr.nextInt(); //Sets key variable as next integer input from user
 
         //Sets result variable as return value from method call
-        int result = runBinarySearchIteratively(arr, key, 0, arr.length);
+        int result = runBinarySearchIteratively(arr, key, 0, arr.length-1);
 
-        //prints result
-        System.out.println(result);
+        if(result== Integer.MAX_VALUE){ //If number is not found in array prints message letting user know
+            System.out.println("The number " + key + " is not in the array.");
+        }
+        else{ //If key is found prints message letting user know the number was found at which index.
+            System.out.println("The number " + key + " is at index " + result + ".");
+        }
     }
     //ToDo 2: Call the above method and test the algorithm  
     // provide time and space analysis 
